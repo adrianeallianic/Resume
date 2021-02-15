@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
+</head>
+<body>
+	<div class="header">
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html">PapaBear</a>
+			</div>
+			<div class="menu">
+				<ul>	
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="potfolio.html">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>	 
+			</div>
+			<div class="contact-info">
+				<ul>
+					<li><a href="#" class="phone-no">+63 906 217 3476</a></li>
+					<li><a href="#" class="sep">/</a></li>
+					<li><a href="#" class="email">allianicadriane5@gmail.com</a></li>
+				</ul>
+			</div>
+		</div>
+	<div class="container">
+	 	<h1>PORTFOLIO</h1>
+	 	<div class="row">
+	 		<div class="col">
+	 			<div class="feature-img">
+	 				<img src="portfolio/INTRO.png" width="100%">
+	 				<img src="portfolio/play.png" class="play-btn" onclick="playVideo('portfolio/INTRO.mp4')">
+	 			</div>
+	 		</div>
+	 		<div class="col">
+	 			<div class="small-img-row">
+	 				<div class="small-img">
+	 					<img src="portfolio/sample 1.png">
+	 					<img src="portfolio/play.png" class="play-btn" onclick="playVideo('portfolio/1.mp4')">
+	 				</div>
+	 				<p>Sample Trailer</p>
+	 			</div>
+	 		</div>
+	 		<div class="col">
+	 			<div class="small-img-row">
+	 				<div class="small-img">
+	 					<img src="portfolio/sample 2.png">
+	 					<img src="portfolio/play.png" class="play-btn" onclick="playVideo('portfolio/2.mp4')">
+	 				</div>
+	 				<p>Sample Montage</p>
+	 			</div>
+	 		</div>
+	 		<div class="col">
+	 			<div class="small-img-row">
+	 				<div class="small-img">
+	 					<img src="portfolio/sample 3.png">
+	 					<img src="portfolio/play.png" class="play-btn" onclick="playVideo('portfolio/3.mp4')">
+	 				</div>
+	 				<p>Sample Trailer 2</p>
+	 			</div>
+	 		</div>
+	 		<div class="social-icons">
+				<ul>
+					<li><a href="https://www.facebook.com/PAPABEARSTREAMS" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://twitter.com/allianicadriane" target="_blank"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://www.instagram.com/allianicadriane/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="https://www.youtube.com/channel/UCkDKZaBxmMTpFyhimdTRAtA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+			</div>
+			<div class="copy-right">
+				<p>&copy; PapaBear 2020</p>
+			</div>
+	 	</div>
+	</div>
+	<div class="video-player" id="videoPlayer">
+		<video width="100%" controls autoplay id="myVideo">
+			<source src="portfolio/INTRO.mp4" type="video/mp4">
+		</video>
+		<img src="portfolio/close.png" class="close-btn" onclick="stopVideo()">
+	</div>
+
+	<script type="text/javascript">
+		var videoPlayer = document.getElementById("videoPlayer");
+		var myVideo = document.getElementById("myVideo");
+		function stopVideo(){
+
+			videoPlayer.style.display = "none";
+
+		}
+		function playVideo(file){
+			myVideo.src = file;
+			videoPlayer.style.display = "block";
+		}
+	</script>
+
+</body>
+</html>
